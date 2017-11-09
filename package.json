@@ -1,0 +1,16 @@
+{
+  "name": "async-until",
+  "version": "0.0.1",
+  "description": "Wait until a given callback returns true",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skidding/async-until.git"
+  },
+  "author": "Ovidiu Cherecheș",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skidding/async-until/issues"
+  },
+  "homepage": "https://github.com/skidding/async-until#readme"
+}
