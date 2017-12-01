@@ -1,8 +1,8 @@
 {
   "name": "async-until",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Wait until a given callback returns true",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skidding/async-until.git"
@@ -12,5 +12,16 @@
   "bugs": {
     "url": "https://github.com/skidding/async-until/issues"
   },
-  "homepage": "https://github.com/skidding/async-until#readme"
+  "homepage": "https://github.com/skidding/async-until#readme",
+  "scripts": {
+    "build": "babel src --out-dir lib --ignore *.test.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^21.2.1"
+  }
 }
