@@ -3,6 +3,8 @@
 Wait until a given callback returns true. Works great with async/await.
 
 ```js
+import until from 'async-until';
+
 await until(() => something === someOtherThing);
 
 // Or, more verbose
