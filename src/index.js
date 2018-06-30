@@ -11,10 +11,10 @@ module.exports = function until(cb, opts = {}) {
     // ensures we don't bail too soon in case of a hiccup.
     let loopCount = 0;
 
-    function loop() {
+    async function loop() {
       loopCount += 1;
 
-      if (cb()) {
+      if (await cb()) {
         resolve(true);
       } else if (Date.now() - t1 < timeout || loopCount < minLoops) {
         setTimeout(loop);
