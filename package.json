@@ -1,6 +1,6 @@
 {
   "name": "async-until",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "description": "Wait until a given callback returns true",
   "main": "lib/index.js",
   "repository": {
