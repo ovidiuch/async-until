@@ -1,5 +1,5 @@
 module.exports = function until(cb, opts = {}) {
-  const { failMsg, timeout = 300, minLoops = 3 } = opts;
+  const { failMsg, timeout = 300, loopDelay = 0, minLoops = 3 } = opts;
   const t1 = Date.now();
 
   return new Promise((resolve, reject) => {
@@ -17,7 +17,7 @@ module.exports = function until(cb, opts = {}) {
       if (await cb()) {
         resolve(true);
       } else if (Date.now() - t1 < timeout || loopCount < minLoops) {
-        setTimeout(loop);
+        setTimeout(loop, loopDelay);
       } else {
         reject(failMsg || getDefaultMessage(cb));
       }
