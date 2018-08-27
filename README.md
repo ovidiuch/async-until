@@ -1,5 +1,7 @@
 # async-until
 
+[![Build Status](https://travis-ci.org/skidding/async-until.svg?branch=master)](https://travis-ci.org/skidding/async-until)
+
 Wait until a given callback returns true. Works great with async/await.
 
 ```js
