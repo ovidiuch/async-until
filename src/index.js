@@ -14,12 +14,20 @@ module.exports = function until(cb, opts = {}) {
     async function loop() {
       loopCount += 1;
 
-      if (await cb()) {
+      if (await run()) {
         resolve(true);
       } else if (Date.now() - t1 < timeout || loopCount < minLoops) {
         setTimeout(loop, loopDelay);
       } else {
-        reject(failMsg || getDefaultMessage(cb));
+        reject(new Error(failMsg || getDefaultMessage(cb)));
+      }
+    }
+
+    async function run() {
+      try {
+        return cb();
+      } catch (err) {
+        reject(err);
       }
     }
 
