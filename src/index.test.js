@@ -7,7 +7,9 @@ it('fails if condition returns false', async () => {
   } catch (err) {
     expect(err).toEqual(
       new Error(
-        `Timeout expired. Condition wasn't met: function () {return false;}`
+        `Timeout expired. Condition wasn't met: function () {
+            return false;
+          }`
       )
     );
   }
@@ -24,7 +26,9 @@ it('fails if condition takes too long', async () => {
   } catch (err) {
     expect(err).toEqual(
       new Error(
-        `Timeout expired. Condition wasn't met: function () {return response;}`
+        `Timeout expired. Condition wasn't met: function () {
+            return response;
+          }`
       )
     );
   }
