@@ -3,16 +3,9 @@
   "version": "1.2.1",
   "description": "Wait until a given callback returns true",
   "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skidding/async-until.git"
-  },
-  "author": "Ovidiu Cherecheș",
+  "repository": "https://github.com/skidding/async-until.git",
+  "author": "Ovidiu Cherecheș <hello@ovidiu.ch>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/skidding/async-until/issues"
-  },
-  "homepage": "https://github.com/skidding/async-until#readme",
   "scripts": {
     "build": "babel src --out-dir lib --ignore **/**.test.js",
     "test": "jest",
