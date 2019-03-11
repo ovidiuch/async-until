@@ -1,6 +1,6 @@
 {
   "name": "async-until",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "description": "Wait until a given callback returns true",
   "main": "lib/index.js",
   "repository": "https://github.com/skidding/async-until.git",

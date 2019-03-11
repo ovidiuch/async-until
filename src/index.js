@@ -1,4 +1,4 @@
-module.exports = function until(cb, opts = {}) {
+export default async function until(cb, opts = {}) {
   const { failMsg, timeout = 300, loopDelay = 0, minLoops = 3 } = opts;
   const t1 = Date.now();
 
@@ -34,7 +34,7 @@ module.exports = function until(cb, opts = {}) {
     // Kick it
     loop();
   });
-};
+}
 
 function getDefaultMessage(cb) {
   return `Timeout expired. Condition wasn't met: ${cb}`;
