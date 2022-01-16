@@ -1,4 +1,4 @@
-import until from './';
+import until from '.';
 
 it('fails if condition returns false', async () => {
   expect.assertions(1);
