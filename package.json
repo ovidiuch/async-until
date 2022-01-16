@@ -7,7 +7,7 @@
   "author": "Ovidiu Cherecheș <hello@ovidiu.ch>",
   "license": "MIT",
   "scripts": {
-    "prettify": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "prettify": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
     "check-types": "tsc --noEmit",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
