@@ -1,3 +1,4 @@
+.prettierrc
 .travis.yml
 coverage
 jest.config.js
