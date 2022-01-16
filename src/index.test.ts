@@ -1,4 +1,4 @@
-import until from './';
+import until from '.';
 
 it('fails if condition returns false', async () => {
   expect.assertions(1);
@@ -6,11 +6,7 @@ it('fails if condition returns false', async () => {
     await until(() => false);
   } catch (err) {
     expect(err).toEqual(
-      new Error(
-        `Timeout expired. Condition wasn't met: function () {
-            return false;
-          }`
-      )
+      new Error(`Timeout expired. Condition wasn't met: () => false`)
     );
   }
 });
@@ -25,11 +21,7 @@ it('fails if condition takes too long', async () => {
     await until(() => response, { timeout: 250 });
   } catch (err) {
     expect(err).toEqual(
-      new Error(
-        `Timeout expired. Condition wasn't met: function () {
-            return response;
-          }`
-      )
+      new Error(`Timeout expired. Condition wasn't met: () => response`)
     );
   }
 });

@@ -1,4 +1,11 @@
-export default async function until(cb, opts = {}) {
+export type UntilOpts = {
+  failMsg?: string;
+  timeout?: number;
+  loopDelay?: number;
+  minLoops?: number;
+};
+
+export default async function until(cb: () => unknown, opts: UntilOpts = {}) {
   const { failMsg, timeout = 300, loopDelay = 0, minLoops = 3 } = opts;
   const t1 = Date.now();
 
@@ -36,6 +43,6 @@ export default async function until(cb, opts = {}) {
   });
 }
 
-function getDefaultMessage(cb) {
+function getDefaultMessage(cb: () => unknown) {
   return `Timeout expired. Condition wasn't met: ${cb}`;
 }
