@@ -1,2 +1,5 @@
-babel.config.js
+coverage
+jest.config.js
 src
+tsconfig.build.json
+tsconfig.json
