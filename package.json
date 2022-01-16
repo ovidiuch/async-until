@@ -1,26 +1,28 @@
 {
   "name": "async-until",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Wait until a given callback returns true",
   "main": "lib/index.js",
   "repository": "https://github.com/skidding/async-until.git",
   "author": "Ovidiu Cherecheș <hello@ovidiu.ch>",
   "license": "MIT",
   "scripts": {
+    "prettify": "prettier --write src/**/*.js",
     "build": "babel src --out-dir lib --ignore **/**.test.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^23.4.2",
-    "jest": "^23.5.0"
+    "babel-jest": "^27.4.6",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1"
   },
   "dependencies": {
-    "@babel/runtime-corejs2": "^7.0.0"
+    "@babel/runtime-corejs2": "^7.16.7"
   }
 }
