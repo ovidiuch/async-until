@@ -7,6 +7,7 @@
   "author": "Ovidiu Cherecheș <hello@ovidiu.ch>",
   "license": "MIT",
   "scripts": {
+    "prettify": "prettier --write src/**/*.js",
     "build": "babel src --out-dir lib --ignore **/**.test.js",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -18,7 +19,8 @@
     "@babel/preset-env": "^7.16.8",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.4.6",
-    "jest": "^27.4.7"
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1"
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.16.7"
