@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "Wait until a given callback returns true",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/skidding/async-until.git",
   "author": "Ovidiu Cherecheș <hello@ovidiu.ch>",
   "license": "MIT",
