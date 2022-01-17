@@ -1,0 +1,19 @@
+name: ci
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [12, 14, 16]
+    name: Node ${{ matrix.node }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - run: yarn --frozen-lockfile
+      - run: yarn check-types
+      - run: yarn test
+      - uses: codecov/codecov-action@v2.1.0
