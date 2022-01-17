@@ -1,6 +1,7 @@
 # async-until
 
-[![Build Status](https://app.travis-ci.com/skidding/async-until.svg?branch=master)](https://app.travis-ci.com/skidding/async-until)
+[![ci status](https://github.com/skidding/async-until/actions/workflows/test.yml/badge.svg)](https://github.com/skidding/async-until/actions/workflows/test.yml)
+[![coverage status](https://codecov.io/gh/skidding/async-until/graph/badge.svg)](https://codecov.io/gh/skidding/async-until)
 
 Wait until a given callback returns true. Works great with async/await.
 
