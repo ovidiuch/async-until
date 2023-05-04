@@ -9,11 +9,13 @@ jobs:
         node: [14, 16, 18, 20]
     name: Node ${{ matrix.node }}
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - run: yarn --frozen-lockfile
       - run: yarn check-types
       - run: yarn test
-      - uses: codecov/codecov-action@v2.1.0
+      - uses: codecov/codecov-action@v3
+        # Only report coverage once
+        if: matrix.node == 18
