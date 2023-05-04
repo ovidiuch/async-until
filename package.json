@@ -17,12 +17,12 @@
     "test:watch": "jest --watch",
     "build": "rm -rf dist && yarn tsc -b tsconfig.build.json"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^29.5.1",
     "jest": "^29.5.0",
     "prettier": "^2.8.8",
     "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
-  },
-  "dependencies": {}
+  }
 }
