@@ -1,12 +1,15 @@
 {
   "name": "async-until",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Wait until a given callback returns true",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "repository": "https://github.com/skidding/async-until.git",
   "author": "Ovidiu Cherecheș <hello@ovidiu.ch>",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prettify": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
     "check-types": "tsc --noEmit",

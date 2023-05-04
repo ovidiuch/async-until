@@ -1,7 +1,0 @@
-.prettierrc
-.travis.yml
-coverage
-jest.config.js
-src
-tsconfig.build.json
-tsconfig.json
