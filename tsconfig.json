@@ -1,18 +1,17 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "es2015"],
     "declaration": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
     "noEmitOnError": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "outDir": "dist",
-    "strict": true,
     "skipLibCheck": true,
-    "esModuleInterop": true
+    "strict": true,
+    "target": "ES2022"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
